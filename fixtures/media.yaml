@@ -1,0 +1,26 @@
+App\Entity\Media:
+  media (template):
+    shortDescription: <short description <current()>
+    longDescription: <long description <current()>
+    releaseDate: <dateTimeBetween('-20 years', 'now')>
+    coverImage: <imageUrl(640, 480)>
+
+
+App\Entity\Movie:
+    movie{1..10} (extends media):
+      title: "Movie <current()> - <name()>"
+
+
+App\Entity\Serie:
+    serie{1..10} (extends media):
+      title: "Serie <current()> - <name()>"
+
+App\Entity\Episode:
+    episode{1..10}:
+      title: "Episode <current()> - <name()>"
+      duration: <dateTimeBetween('00:10:00', '00:50:00')>
+      releaseDate: <dateTimeBetween('-20 years', 'now')>
+
+App\Entity\Season:
+    season{1..10}:
+      seasonNumber: <current()>

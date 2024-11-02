@@ -1,0 +1,28 @@
+App\Entity\Language:
+  language_english:
+    name: 'english'
+    code: 'en'
+  language_french:
+    name: 'french'
+    code: 'fr'
+  language_spanish:
+    name: 'spanish'
+    code: 'es'
+  language_german:  
+    name: 'german'
+    code: 'de'  
+  language_italian: 
+    name: 'italian'
+    code: 'it'  
+  language_portuguese:
+    name: 'portuguese'
+    code: 'pt'
+  language_russian: 
+    name: 'russian'
+    code: 'ru'
+  language_chinese: 
+    name: 'chinese'
+    code: 'zh'
+  language_japanese:
+    name: 'japanese'
+    code: 'ja'
